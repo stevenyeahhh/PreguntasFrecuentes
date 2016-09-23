@@ -118,17 +118,21 @@ class View {
             for ($h = 0; $h < $totalColumnas; $h++):
                 echo "<td>";
                 if ($h == 0) {
-                    echo "<a href='http://$_SERVER[HTTP_HOST]/$urlConsultar/" . $tablaDatos[$p][0] . "'>" . $tablaDatos[$p][0] . "</a>";
+                    echo "<a href='http://$_SERVER[HTTP_HOST]/$urlConsultar/" . $tablaDatos[$p][0] . "'>" . ($p+1) . "</a>";
                 } else {
                     if ($h === ($totalColumnas - 1)) {
                         if ($isWithSlide) {
                             
                             echo "<input type='checkbox' class='slider-tabla'  " . (( $tablaDatos[$p][$h] == 1) ? "checked" : "") . " value='" . $tablaDatos[$p][0] . "'/>";
                         } else {
-                            echo $tablaDatos[$p][$h]?"SI":"NO";
+                            if(is_numeric($tablaDatos[$p][$h])){
+                                echo $tablaDatos[$p][$h]?"SI":"NO";
+                            }else{
+                                echo "<a href='http://$_SERVER[HTTP_HOST]/$urlConsultar/" . $tablaDatos[$p][0] . "'>" . $tablaDatos[$p][$h] . "</a>";
+                            }
                         }
                     } else {
-                        echo $tablaDatos[$p][$h];
+                        echo "<a href='http://$_SERVER[HTTP_HOST]/$urlConsultar/" . $tablaDatos[$p][0] . "'>" . $tablaDatos[$p][$h] . "</a>";
                     }
                 }
                 echo "</td>";
@@ -283,5 +287,3 @@ class View {
     }
 
 }
-
-?>

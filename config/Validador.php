@@ -26,12 +26,13 @@ class Validador {
         $this->valoresQuitados = $valores;
     }
 
-    public function validarServidor() {
+    public function validarServidor() {        
         $isValid = false;
         foreach ($this->campos as $key => $value) {
-            foreach ($value as $validacion => $valor) {                
-                if (!array_key_exists($key,$this->valoresQuitados)) {                    
-                    if ($validacion == "required") {
+            foreach ($value as $validacion => $valor) {
+                if (!array_key_exists($key,$this->valoresQuitados)) {
+                    if ($validacion === "required") {
+//                        echo $validacion ."=>".$this->valores[$key]."=>".$key;
                         if (!empty($this->valores[$key])) {
                             $isValid = true;
                         } else {
@@ -39,7 +40,7 @@ class Validador {
                             return $isValid;
                         }
                     }
-                    if ($validacion == "number") {
+                    if ($validacion === "number") {
                         if (is_numeric($this->valores[$key])) {
                             $isValid = true;
                         } else {
@@ -47,7 +48,7 @@ class Validador {
                             return $isValid;
                         }
                     }
-                    if ($validacion == "max") {
+                    if ($validacion === "max") {
                         if ($this->valores[$key] <= $valor) {
                             $isValid = true;
                         } else {
@@ -55,7 +56,7 @@ class Validador {
                             return $isValid;
                         }
                     }
-                    if ($validacion == "min") {
+                    if ($validacion === "min") {
                         if ($this->valores[$key] >= $valor) {
                             $isValid = true;
                         } else {
@@ -63,7 +64,7 @@ class Validador {
                             return $isValid;
                         }
                     }
-                    if ($validacion == "regexp") {
+                    if ($validacion === "regexp") {
                         if (preg_match("/^$valor$/", $this->valores[$key]) == 1) {
                             $isValid = true;
                         } else {

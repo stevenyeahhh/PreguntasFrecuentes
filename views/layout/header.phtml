@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title><?= $this->title == null ? "Save" : $this->title." | Save"; ?></title> 
-        
+        <link rel="icon" type="image/png" href="<?= BASE ?>/img/logo.png" />
         <style>
             .btnHerramientas{
                 width: 400px;
@@ -103,18 +103,13 @@
             var BASEJS = "<?= "http://$_SERVER[HTTP_HOST]/" ?>";
         </script>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        
-
-        
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
-
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap2/bootstrap-switch.min.css"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js"></script>
 
@@ -142,6 +137,11 @@
             })
         </script>
         <?php endif;?>
+
+        <!-- JPG - Captcha - Inicio -->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <!-- JPG - Captcha - Fin -->
+
     </head>
     <body>
 
@@ -152,11 +152,13 @@
         <br/>
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <a href="<?= BASE?>">
                         <img src="<?= BASE ?>/img/logo.png"/>
                     </a>
-
+                    <br/>
+                    <br/>
+                    <br/>
 
 
                     <?php if ($this->barmenu) { ?>
@@ -196,7 +198,7 @@
                         </div>
                     <?php } ?>
                 </div>
-                <div class=" col-sm-9">
+                <div class=" col-sm-10">
                     <!--                    <div
                                             class="fb-like"
                                             data-share="true"

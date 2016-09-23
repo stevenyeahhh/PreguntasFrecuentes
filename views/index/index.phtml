@@ -1,25 +1,29 @@
 <?php
 //DATA debe ser cargado desde el controlador
-//Aclaración de la función en config/view.php
+
+//Aclaraci�n de la funci�n en config/view.php
 // $this->crearTabla($this->params["DATA"],array(),"","index/consultarIndex","index/desactivarIndex")
 ?>
-<form class="form-inline" role="form" method="post">
+<form role="form" method="post">
     <div class="form-group">
         <label for="usr">Usuario:</label>
-        <input type="text" class="form-control" id="usr">
+        <input title="Ingrese su nombre de usuario" type="text" class="form-control" id="usr" name="nombreUsuario">
     </div>
+    <br/>
     <div class="form-group">
         <label for="pwd">Contraseña:</label>
-        <input type="password" class="form-control" id="pwd">
+        <input title="Ingrese su contraseña" type="password" class="form-control" id="pwd" name="contrasena">
+
     </div>
-    <input class="btn btn-info" input="submit" value="Enviar"/>
+    <br/>
+    <input class="btn btn-info" type="submit" value="Enviar"/>
 </form>
 
 <br/>
 <br/>
 
-<h2>Información de save</h2>
+<!--<h2>Información de save</h2>
 <p>
     A. Implementación del sistema de Voto Electrónico: Consiste en realizar un sistema de votación a través de internet para diversos tipos de elecciones este debe ser implementado en cada una de las empresas para la elección de representantes y directivos, en este proyecto nos centraremos solo en la empresa “Politécnico Grancolombiano”
 </p>
-
+-->

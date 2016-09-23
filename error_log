@@ -1,0 +1,60 @@
+[01-Apr-2016 04:35:35 UTC] PHP Fatal error:  Class 'Request' not found in /home/stevenyeahhh/public_html/index.php on line 18
+[03-Apr-2016 01:03:52 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home/stevenyeahhh/public_html/models/UsuarioModel.php on line 24
+[03-Apr-2016 01:04:20 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home/stevenyeahhh/public_html/models/UsuarioModel.php on line 24
+[03-Apr-2016 01:04:24 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home/stevenyeahhh/public_html/models/UsuarioModel.php on line 24
+[03-Apr-2016 01:04:35 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home/stevenyeahhh/public_html/models/UsuarioModel.php on line 24
+[03-Apr-2016 01:04:48 UTC] PHP Fatal error:  Call to a member function fetchAll() on a non-object in /home/stevenyeahhh/public_html/controllers/IndexController.php on line 27
+[03-Apr-2016 01:35:34 UTC] PHP Fatal error:  Call to a member function selectQuery() on a non-object in /home/stevenyeahhh/public_html/models/UsuarioModel.php on line 33
+[03-Apr-2016 01:36:30 UTC] PHP Fatal error:  Call to a member function selectQuery() on a non-object in /home/stevenyeahhh/public_html/models/UsuarioModel.php on line 33
+[03-Apr-2016 01:50:46 UTC] PHP Fatal error:  Call to a member function selectQuery() on a non-object in /home/stevenyeahhh/public_html/models/UsuarioModel.php on line 33
+[03-Apr-2016 01:56:18 UTC] PHP Fatal error:  Call to a member function fetchAll() on a non-object in /home/stevenyeahhh/public_html/controllers/IndexController.php on line 25
+[03-Apr-2016 01:57:38 UTC] PHP Fatal error:  Call to a member function fetchAll() on a non-object in /home/stevenyeahhh/public_html/controllers/IndexController.php on line 25
+[03-Apr-2016 17:32:26 UTC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in /home/stevenyeahhh/public_html/models/TipoIdentificacionModel.php on line 20
+[03-Apr-2016 17:33:01 UTC] PHP Fatal error:  Call to a member function selectGeneroUsuario() on a non-object in /home/stevenyeahhh/public_html/controllers/AdministradorController.php on line 69
+[03-Apr-2016 17:47:49 UTC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in /home/stevenyeahhh/public_html/models/CargoTrabajoModel.php on line 22
+[03-Apr-2016 20:12:46 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:12:55 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:12:55 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:12:55 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:12:59 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:13:30 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:16:15 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:16:47 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:17:00 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:17:35 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:18:05 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:18:51 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:19:47 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:19:52 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:21:00 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:22:40 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:22:45 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:23:45 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 20:24:47 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[03-Apr-2016 21:03:02 UTC] PHP Fatal error:  Cannot use object of type PDOStatement as array in /home/stevenyeahhh/public_html/views/administrador/actualizarUsuario.phtml on line 5
+[03-Apr-2016 21:03:11 UTC] PHP Fatal error:  Cannot use object of type PDOStatement as array in /home/stevenyeahhh/public_html/views/administrador/actualizarUsuario.phtml on line 5
+[04-Apr-2016 01:36:11 UTC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in /home/stevenyeahhh/public_html/models/EncuestaModel.php on line 25
+[04-Apr-2016 03:14:32 UTC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in /home/stevenyeahhh/public_html/models/CandidatoModel.php on line 25
+[04-Apr-2016 04:06:24 UTC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in /home/stevenyeahhh/public_html/models/EleccionUsuarioModel.php on line 23
+[07-Apr-2016 01:17:52 UTC] PHP Fatal error:  Call to undefined method EncuestaController::validar() in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 17
+[07-Apr-2016 01:18:09 UTC] PHP Fatal error:  Call to undefined method EncuestaController::validar() in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 17
+[07-Apr-2016 01:18:43 UTC] PHP Fatal error:  Call to undefined method EncuestaController::validar() in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 17
+[07-Apr-2016 01:18:53 UTC] PHP Fatal error:  Call to undefined method EncuestaController::validar() in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 17
+[07-Apr-2016 01:25:18 UTC] PHP Fatal error:  Call to undefined method EncuestaController::validar() in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 17
+[07-Apr-2016 01:33:18 UTC] PHP Fatal error:  Call to undefined method EncuestaController::validar() in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 21
+[07-Apr-2016 01:34:50 UTC] PHP Fatal error:  Call to undefined method EncuestaController::validar() in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 24
+[07-Apr-2016 01:35:41 UTC] PHP Fatal error:  Call to undefined method EncuestaController::validar() in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 24
+[08-Apr-2016 01:11:51 UTC] PHP Fatal error:  Call to a member function setNombre() on a non-object in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 36
+[08-Apr-2016 01:22:22 UTC] PHP Fatal error:  Call to a member function setNombre() on a non-object in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 39
+[08-Apr-2016 01:22:26 UTC] PHP Fatal error:  Call to a member function setNombre() on a non-object in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 39
+[08-Apr-2016 01:23:03 UTC] PHP Fatal error:  Call to a member function setNombre() on a non-object in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 39
+[08-Apr-2016 02:03:26 UTC] PHP Fatal error:  Call to a member function setNombre() on a non-object in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 39
+[08-Apr-2016 02:04:55 UTC] PHP Fatal error:  Call to a member function setNombre() on a non-object in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 39
+[08-Apr-2016 02:05:21 UTC] PHP Fatal error:  Call to a member function setNombre() on a non-object in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 39
+[08-Apr-2016 02:14:07 UTC] PHP Fatal error:  Call to a member function setNombre() on a non-object in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 39
+[08-Apr-2016 02:15:25 UTC] PHP Fatal error:  Call to undefined method UsuarioModel::setFechaInicioInscripcion() in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 48
+[08-Apr-2016 02:15:47 UTC] PHP Fatal error:  Call to undefined method EncuestaModel::setNombre() in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 47
+[08-Apr-2016 02:19:43 UTC] PHP Fatal error:  Call to undefined method EncuestaModel::registrar() in /home/stevenyeahhh/public_html/controllers/EncuestaController.php on line 53
+[08-Apr-2016 22:50:24 UTC] PHP Fatal error:  Call to a member function columnCount() on a non-object in /home/stevenyeahhh/public_html/config/View.php on line 102
+[09-Apr-2016 01:46:12 UTC] PHP Fatal error:  Call to a member function fetchAll() on a non-object in /home/stevenyeahhh/public_html/views/administrador/asignarHabilitados.phtml on line 14
+[09-Apr-2016 19:19:08 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/stevenyeahhh/public_html/models/CandidatoModel.php on line 52

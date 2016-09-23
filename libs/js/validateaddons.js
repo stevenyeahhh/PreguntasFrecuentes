@@ -28,9 +28,12 @@ $(function () {
 });
 
 $(document).ready(function () {
+    $(".datepick").each(function () {
+        $(this).datepicker({format: 'yyyy/mm/dd'});
+    });
 //    $(".report").append("<img style='width:40px;height:40px' src='"+BASE+"/img/excel.png'></div>");
 
-    $(".slider-tabla").bootstrapSwitch({onText:"SI",offText:"NO"});
+    $(".slider-tabla").bootstrapSwitch({onText: "SI", offText: "NO"});
 //    $(document).on("click", ".btn-control-agregar", function(ev) {
 //        $(".contenedor-forms").append("<tr>" + $(".tr-original").html() + "</tr>")
 //    });
@@ -83,7 +86,7 @@ function crearBootstrapSwitch(clase, url) {
             url: BASE + url,
             type: "POST",
             data: {
-                usuario: $(this).val(),
+                id: $(this).val(),
                 estado: state ? 1 : 0
             },
             error: function (error) {
