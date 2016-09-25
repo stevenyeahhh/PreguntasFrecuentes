@@ -5,10 +5,18 @@
 // $this->crearTabla($this->params["DATA"],array(),"","index/consultarIndex","index/desactivarIndex")
 ?>
 <form role="form" method="post">
-    <?php // $now=new Date(); ?>
-    Bienvenido a PreguntApp
-    <!--<input type="hidden" name="session" value="<?=(new DateTime())->getTimestamp()?>">-->
-    <!--<input class="btn btn-info" type="submit" value="Iniciar Sesión"/>--> 
+    <div class="form-group">
+        <label for="usr">Usuario:</label>
+        <input title="Ingrese su nombre de usuario" type="text" class="form-control" id="usr" name="nombreUsuario">
+    </div>
+    <br/>
+    <div class="form-group">
+        <label for="pwd">Contraseña:</label>
+        <input title="Ingrese su contraseña" type="password" class="form-control" id="pwd" name="contrasena">
+
+    </div>
+    <input type="hidden" name="session" value="<?=(new DateTime())->getTimestamp()?>">
+    <input class="btn btn-info" type="submit" value="Iniciar"/> 
 </form>
 
 <br/>

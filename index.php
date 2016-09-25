@@ -1,11 +1,13 @@
 <?php
-//echo "Hola";
-ini_set('display_errors', '0');
-//Configuraci�n de la aplicaci�n:
-//-Informaci�n del servidor
+
+ini_set('display_errors', '1');
+
+//Configuración de la aplicación:
+//-Información del servidor
 //-Roles definidos en el sistema
-//-Configuraci�n de la base de datos. 
+//-Configuración de la base de datos. 
 include 'config/config.php';
+
 function __autoload($resource) {
 //        echo ROOT . 'config' . DS . $resource . '.php';
     if (is_readable(ROOT . 'config' . DS . $resource . '.php')) {
@@ -14,8 +16,11 @@ function __autoload($resource) {
 }
 
 try {
-
+    
     $r = new Request();
+    
+    
+//    die("hola");
     $db = new Database();
     $singleton = Singleton::getInstance();
     $singleton->db = $db;
@@ -26,6 +31,6 @@ try {
     echo "Error 404";
 }
 
-//La forma en que se ejecuta un controlador es por url, el orden es [host]/[controlador]/[funci�n del controlador][/ par�meotros]
-//Para ver ejemplo de funcionamiento y funcionalidades b�sicas del framework, ir a controllers/indexController
+//La forma en que se ejecuta un controlador es por url, el orden es [host]/[controlador]/[función del controlador][/ parómeotros]
+//Para ver ejemplo de funcionamiento y funcionalidades bósicas del framework, ir a controllers/indexController
 ?>

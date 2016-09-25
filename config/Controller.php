@@ -3,7 +3,7 @@
 abstract class Controller {
 
     protected $view;
-
+                
     abstract public function index();
 
     public function __construct() {
@@ -11,16 +11,10 @@ abstract class Controller {
         $this->view = new View(Singleton::getInstance()->r->getController());
         $menu = array();
         if ($this->sesionIniciada()) {
-//            $this->view->setMsgBienvenida($this->getSesionVar("ROL") . " : " . $this->getSesionVar("NOMBRE") . " " . $this->getSesionVar("APELLIDO"));
             switch ($this->getRol()) {
-                case ROL_ADMINISTRADOR:
-                    $this->crearMenu($menu, "administrador/registrarUsuarioSecundario", 'Registrar usuario secundario');
-                    $this->crearMenu($menu, "administrador/listarUsuarios", 'Listar usuarios');
-                    $this->crearMenu($menu, "encuesta/crearEleccion", 'Crear Eleccion');
-                    $this->crearMenu($menu, "administrador/asignarHabilitados", 'Asignar Habilitados');
-                    $this->crearMenu($menu, "administrador/listarEncuestas", 'Resultados de votación');   
-                    $this->crearMenu($menu, "administrador/seleccionInforme2", 'Reporte votos por candidato');
-                    $this->crearMenu($menu, "administrador/graficarTercero", 'Reporte de votaciones');                    
+                case ROL_AUTOR:
+                    $this->crearMenu($menu, "pregunta/generar", 'Generar pregunta');
+                    $this->crearMenu($menu, "publicacion/modificar", 'Modificar Publicación');
                     break;
                 case ROL_USUARIO_SECUNDARIO:
                     $this->crearMenu($menu, "usuarioSecundario/listarEleccionesActivas", 'Listar elecciones activas');                    
@@ -28,12 +22,13 @@ abstract class Controller {
                 default:
                     break;
             }
-//            $this->crearMenu($menu, "usuario/consultar", 'Consulta de datos');
-//            $this->crearMenu($menu, "usuario/modificar", 'Modificar datos');
-//            $this->crearMenu($menu, "usuario/eliminar", 'Eliminar cuenta');
             $this->crearMenu($menu, "utilities/logout", 'Cerrar sesión ');
-            $this->view->setMenu($menu);
+            
+        }else{
+            $this->crearMenu($menu, "index/iniciar", 'Iniciar sesión');
+            $this->crearMenu($menu, "pregunta/buscar", 'Buscar Pregunta-Respuesta');
         }
+            $this->view->setMenu($menu);
     }
 
     public function loadModel($model) {
@@ -46,7 +41,7 @@ abstract class Controller {
     }
 
     public function sesionIniciada() {
-        return isset($_SESSION['idUsuario']);
+        return isset($_SESSION['session']);
     }
 
     public function getSesionVar($name) {

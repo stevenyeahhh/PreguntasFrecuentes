@@ -1,0 +1,77 @@
+Desarrollo guiado por pruebas
+DDL
+Historia #1: Iniciar Sesión 
+
+Dado que un autor se encuentra en registro activo dentro de la base de datos del sistema cuando ingrese las credenciales en el sistema para el ingreso al mismo, entonces validar que el autor pueda tener acceso a la plataforma con opciones de interacción diferentes a un usuario sin inicio de sesión.
+Precondiciones: El usuario debe tener credenciales en base de datos para ingresar al sistema con perfil “Autor”.
+
+1.	El sistema de información presenta la siguiente estructura:
+Título: Bienvenido a PreguntApp
+Opciones (SideBar): 
+•	Iniciar Sesión 
+
+•	Buscar Pregunta-Respuesta: A su vez el módulo se compone con las siguientes opciones:
+
+	Categoría (listbox – Opcional – Física, matemáticas, administrativo, etc (Parametrizable de acuerdo al autor).
+	Palabras Clave (Alfanumérico – Opcional – longitud de 100 caracteres).
+	Contenido de respuesta (Alfanumérico – Obligatorio  -longitud 500 caracteres)
+
+2.	El usuario Autor realiza clic sobre la opción “iniciar Sesión”, el sistema despliega una ventana con la siguiente estructura:
+
+Título: Iniciar Sesión
+Campos:
+Usuario (Obligatorio – alfanumérico – longitud 10 caracteres mínimo – Establecido por administrador).
+Contraseña (Obligatorio – numérico, oculto- longitud 8 caracteres- Establecida por administrador).
+Botón:
+Iniciar
+El usuario Autor ingresa nombre de usuario en el campo “Usuario”. Ingresa contraseña en el campo “Contraseña”. A continuación el usuario realiza clic sobre botón “Iniciar”.
+3.	El sistema muestra interfaz de aplicativo para interacción con el usuario Autor. La interfaz se compone de la siguiente información:
+Título: Bienvenido a Preguntas Frecuentes
+Opciones (SideBar): 
+•	Generar pregunta
+•	Modificar Publicación
+•	Cerrar Sesión
+
+Historia # 2: Generar Pregunta 
+Dado que un usuario (Autor) puede generar pregunta-respuesta sobre una inquietud o tema frecuente cuando ingresa por medio de la funcionalidad “Generar Pregunta” tras haber iniciado sesión, entonces validar la publicación de la pregunta-respuesta en el sistema por espera de evaluación de aprobación de contenido.
+Precondiciones: El usuario debe haber iniciado sesión en el sistema.
+1.	EL Usuario realiza clic en la opción “Generar Pregunta”.
+2.	El sistema despliega una ventana donde podrá generar la pregunta-respuesta con la siguiente estructura de página:
+Título: Generar Pregunta-respuesta
+Campos:
+	Título de pregunta (Campo Texto- Obligatorio – Longitud 45 caracteres)
+	Categoría (Campo de texto – Obligatorio – Longitud 20 caracteres)
+	Respuesta (Campo Texto – Obligatorio- Longitud 500 caracteres)
+Botones:
+	Volver atrás
+	Publicar (deshabilitado)
+	Cerrar Sesión
+
+3.	El  Usuario (Autor) ingresa un título de la pregunta en el campo “Título de pregunta”, ingresa la categoría en el campo “Categoría”, ingresa la pregunta-respuesta en el campo “Respuesta” y finalmente realiza clic sobre el botón “Publicar”.
+Nota: El botón “Publicar” se habilita sólo hasta que los campos han sido diligenciados correctamente.
+
+4.	El sistema devolverá al usuario a la pantalla de inicio en donde podrá visualizar la pregunta realizada la cual estará pendiente por aprobación.
+
+Historia #3: Buscar temas (Sin necesidad de iniciar sesión)
+Dado que un usuario, sin iniciar sesión, se encuentra en la plataforma cuando ingresa al sistema “Preguntas Frecuentes”, entonces validar que pueda visualizar las preguntas-respuestas publicadas ya anteriormente aprobadas, a su vez podrá filtrar alguna de interés personal por medio del módulo-opción “Categoría”
+
+Precondiciones: * Usuario sin iniciar sesión dentro de la plataforma.
+•	Debe haber una pregunta-respuesta ya publicada.
+
+1.	El usuario está situado en la página principal de la plataforma “Preguntas-Frecuentes”.
+2.	El sistema mostrará la siguiente estructura de información:
+Título: Bienvenido a PreguntApp
+Opciones (SideBar): 
+•	Iniciar Sesión (Autor)
+
+•	Buscar Pregunta-Respuesta: A su vez el módulo se compone con las siguientes opciones:
+
+	Categoría (listbox – Opcional – Física, matemáticas, administrativo, etc (Parametrizable de acuerdo al autor).
+	Palabras Clave (Alfanumérico – Opcional – longitud de 100 caracteres).
+	Contenido de respuesta (Alfanumérico – Obligatorio  -longitud 500 caracteres)
+
+3.	El usuario realiza clic sobre la lista de despliegue “Categoría” de la sección  “Buscar Preguntas-Respuesta” donde podrá seleccionar la categoría que ha sido asociada a varias preguntas-respuestas ya publicadas y aprobadas.
+4.	El usuario ingresa palabras claves en el campo “Palabras Clave” que serán relacionadas al filtro que el Autor ha publicado con la pregunta-respuesta.
+5.	El usuario ingresa el contenido de las respuestas en el campo “Contenido de respuesta” que ha sido relacionado a la pregunta-respuesta previamente publicada y aprobada.
+6.	El sistema devolverá las preguntas-respuestas filtradas.
+ 

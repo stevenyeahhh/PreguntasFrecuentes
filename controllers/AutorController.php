@@ -1,6 +1,6 @@
 <?php
 
-class IndexController extends Controller {
+class AutorController extends Controller {
 
     private $usuario; //los modelos se guardan en models/[nombre modelo]
 

@@ -10,7 +10,7 @@ class View {
     private $viewPath;
     private $controllerPath;
     private $error;
-    private $params;
+    private $params; 
     private $mensaje;
     private $barmenu;
     private $barmenu2;

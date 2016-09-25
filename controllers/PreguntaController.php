@@ -1,6 +1,6 @@
 <?php
 
-class IndexController extends Controller {
+class PreguntaController extends Controller {
 
     private $usuario; //los modelos se guardan en models/[nombre modelo]
 
@@ -19,19 +19,9 @@ class IndexController extends Controller {
         $this->view->renderize($renderize);
     }
 
-    public function iniciar() {
-        $title = "Bienvenido a PreguntApp";
-        $renderize = "iniciar";
-
-        if ($_POST) {
-            $_SESSION['session'] = $_POST['session'];
-            $title = 'Inició sesión';
-            $renderize = 'initsession';
-        }
-        if ($this->sesionIniciada()) {
-            $title = 'Inició sesión';
-            $renderize = 'initsession';
-        }
+    public function buscar() {
+        $title = "Buscar Pregunta-Respuesta:";
+        $renderize = "buscar";
         $this->view->setTitle($title);
         $this->view->renderize($renderize);
     }

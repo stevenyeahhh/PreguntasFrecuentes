@@ -1,7 +1,7 @@
 <?php
 
 class Database extends PDO {
-
+ 
     private $totalRows;
     private $columns;
 

@@ -4,7 +4,7 @@ class Validador {
 
     private $campos;
     private $valores;
-    private $valoresQuitados;
+    private $valoresQuitados; 
 
     public function __construct() {
         $this->campos = array();

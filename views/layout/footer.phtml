@@ -1,66 +1,5 @@
 <?php
   if(isset($this->msgBienvenida)){echo "<div style='float:right;position:absolute; bottom: 0;margin: 0 auto;color:rgba(8, 85, 140, 0.91)'><b>$this->msgBienvenida</b></div>";}
-//if ($this->tablas):
-//    echo ' <div class="table-responsive">';
-//    for ($i = 0; $i < count($this->tablas); $i++):
-//        $tabla = $this->tablas[$i];
-//        
-//        //->getColumnMeta($column)
-//        echo "<table class='table table-hover'>";
-//        //cabecera
-//        //pie
-////            var_dump($tabla["tabla"]);
-//        $tablaDatos = $tabla["tabla"];
-//        $columnasNumero = count($tablaDatos, COUNT_RECURSIVE);
-//        $totalColumnas=$tablaDatos->columnCount();
-//        
-////        echo "<hr/>";
-////        var_dump($columnasNumero);
-////        echo "<hr/>";
-////        echo "<th colspan='$columnasNumero'>$tabla[NOMBRE_TABLA]</th>";
-//        for ($j = 0; $j < $totalColumnas; $j++) {
-//            echo "<th>";
-//            if (isset($tabla["columnas"][$j])) {
-//                echo $tabla["columnas"][$j];
-//            } else {
-////                echo "-";
-//                echo $tablaDatos->getColumnMeta($j)["name"];
-//            }
-//            echo "</th>";
-//        }
-//        $tablaDatos=$tablaDatos->fetchAll(PDO::FETCH_NUM);
-//        $totalFilas=count($tablaDatos);
-////        var_dump($tablaDatos);
-////        echo "<hr/>";
-////        echo "<hr/>";
-////        var_dump(count($tablaDatos));
-////        var_dump($columnasNumero);
-////        echo "<hr/>"; 
-////        echo "<hr/>";
-//        for ($p = 0; $p < count($tablaDatos); $p++): 
-//            echo "<tr>";
-//            for ($h = 0; $h < $totalColumnas; $h++):
-//                echo "<td>";
-//                if($h==($totalColumnas-1)){
-////                    echo $tablaDatos[$p][$h];
-//                   echo "<input type='checkbox' class='slider-tabla'  ".(( $tablaDatos[$p][$h]==1)?"checked":"")." value='".$tablaDatos[$p][0]."'/>";
-//                }else{
-//                    //#no:=>si el valor de la columna fila está en un listado (otra tabla)
-//                    
-//                    echo $tablaDatos[$p][$h];
-//                    
-//                }
-//                echo "</td>";
-////                echo "<td>".$tablaDatos[$p][$h]."</td>";
-//                
-//            endfor;
-//            echo "</tr>";
-//        endfor;
-//        
-//
-//        echo "</table>";
-//    endfor;
-//endif;
 ?>
 <br/><br/>
 <?php
@@ -69,6 +8,12 @@ if (isset($this->error)) {
 }
 ?>
 </div>
+</div>
+</div>
+<br/>
+<br/>
+<div style=" width: 100%;bottom:0px; position: fixed;text-align: center;   " class="panel-footer">
+    ?Steven
 </div>
 </body>
 </html>
