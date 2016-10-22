@@ -12,6 +12,7 @@ define("ROL_USUARIO", "4");
 define("DB_ROUTE","mysql:host=localhost;dbname=frequestion");
 define("DB_USER","frequestion_us"); 
 define("DB_PASSWORD","frequestion?PW2207");
+define("APP_NAME","FreQuestion");
 //die('Hola11');
 // define("DB_USER","root"); 
 // define("DB_PASSWORD","root");  

@@ -1,14 +1,14 @@
 <?php
 
-class IndexController extends Controller {
+class AdministradorController extends Controller {
 
     private $usuario; //los modelos se guardan en models/[nombre modelo]
 
     public function __construct() {
         parent::__construct();
-//        if ($this->sesionIniciada()) {
-//             header("Location:" . BASE .  'index/initsession');            
-//        }
+        if (!($this->sesionIniciada() && $this->getSesionVar('idRol') == 1)) {
+            header("Location:" . BASE . 'index' . DS);
+        }
     }
 
     public function index() {

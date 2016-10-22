@@ -6,13 +6,13 @@
 ?>
 <form role="form" method="post">
     <div class="form-group">
-        <label for="usr">Usuario:</label>
+		<label for="usr">Usuario: <font color='red'>*</font></label>
         <input title="Ingrese su nombre de usuario" type="text" class="form-control" id="usr" name="nombreUsuario">
     </div>
     <br/>
     <div class="form-group">
-        <label for="pwd">Contraseña:</label>
-        <input title="Ingrese su contraseña" type="password" class="form-control" id="pwd" name="contrasena">
+        <label for="pwd">Contraseña: <font color='red'>*</font></label>
+        <input title="Ingrese su contraseña" type="password" class="form-control" id="pwd" name="clave">
 
     </div>
     <input type="hidden" name="session" value="<?=(new DateTime())->getTimestamp()?>">

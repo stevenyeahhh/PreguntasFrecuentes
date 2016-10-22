@@ -13,12 +13,14 @@ class Database extends PDO {
         }
     }
     function selectQuery($table, $columns, $where) {
-        $where = trim($where) == "" ? "" : " WHERE $where";        
+        $where = trim($where) == "" ? "" : " WHERE $where";  
+		echo "SELECT $columns FROM $table $where";
         return parent::query("SELECT $columns FROM $table $where");
     }
 
     function insertQuery($table, $columns, $values) {
         $query = parent::query("INSERT INTO $table ($columns) VALUES ($values)");
+		echo "INSERT INTO $table ($columns) VALUES ($values)";
         return $query;
     }
 

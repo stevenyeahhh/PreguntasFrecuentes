@@ -10,8 +10,10 @@ class Boot {
         $arguments = $r->getArguments();
         
         if (is_readable($controllerPath)) {
+			
             require_once $controllerPath;
-            $controller = new $controller;
+            
+			$controller = new $controller;
             
             if (!is_callable(array($controller, $method))) {
                 $method = 'index';

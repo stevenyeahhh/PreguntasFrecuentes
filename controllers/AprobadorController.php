@@ -1,12 +1,17 @@
 <?php
 
-class AutorController extends Controller {
+class AprobadorController extends Controller {
 
     private $usuario; //los modelos se guardan en models/[nombre modelo]
 
     public function __construct() {
         parent::__construct();
-        if (!($this->sesionIniciada() && $this->getSesionVar('idRol') == 2)) {
+		var_dump(($this->sesionIniciada() && $this->getSesionVar('idRol') == 3));
+		var_dump($this->sesionIniciada());
+		var_dump($this->getSesionVar('idRol'));
+		var_dump($_SESSION);
+		die();
+        if (!($this->sesionIniciada() && $this->getSesionVar('idRol') == 3)) {
             header("Location:" . BASE . 'index' . DS);
         }
     }
@@ -20,7 +25,7 @@ class AutorController extends Controller {
     }
 
     public function iniciar() {
-        $title = "Bienvenido a ".APP_NAME;
+        $title = "Bienvenido a PreguntApp";
         $renderize = "iniciar";
 
         if ($_POST) {

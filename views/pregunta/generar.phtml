@@ -1,0 +1,50 @@
+<script>
+    $(document).ready(function() {
+        $("form>input[type='text']").each(function() {
+            $(this).on("change input", function() {
+                  
+                if ($("#titulo").val().trim() != "" && $("#categoria").val().trim() != ""
+                        && $("#respuesta").val().trim() != "" && $("#keyWords").val().trim() != "") {
+                    $("#btnPublicar").removeAttr("disabled")
+                }
+                else {
+                    $("#btnPublicar").attr("disabled","disabled")
+                }
+            })
+        })
+    })
+$( function() {
+    var availableTags = [];
+    <?php foreach ($this->params["categorias"]as $key=>$categoria){?>
+            availableTags.push("<?=$categoria["categoria"];?>");
+    <?php }?>
+            
+
+	$( "#categoria" ).autocomplete({
+          source: function( request, response ) {
+          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( normalize(request.term) ), "i" );
+          response( $.grep( availableTags, function( item ){
+              return matcher.test( normalize(item) );
+          }) );
+      }
+});
+
+});
+</script> 
+<?php var_dump($this->params["categorias"]);?>
+<form role="form" method="post">
+    <label for="titulo">Título de pregunta :</label>
+    <input title="Palabras clave" type="text" class="form-control" id="titulo" name="titulo">
+
+    <label for="categoria">Categoría :</label>
+    <input title="categoria" type="text" class="form-control" id="categoria" name="categoria">
+    <label for="respuesta">Respuesta :</label>
+    <input title="Respuesta" type="text" class="form-control" id="respuesta" name="respuesta">
+    <label for="keyWords">Palabras clave :</label>
+    <input title="Palabras clave" type="text" class="form-control" id="keyWords" name="keyWords">
+    <br/>
+    <input class="btn btn-info" type="submit" disabled="" id="btnPublicar" value="Publicar"/> 
+
+</form>
+<br/>
+<br/>

@@ -1,7 +1,10 @@
 <?php
 
 ini_set('display_errors', '1');
-
+//session_save_path('/home/sweetmemoriestudio.com/sessions');
+//ini_set('session.gc_probability', 1);
+var_dump(session_save_path ());
+echo "Hola";
 //Configuración de la aplicación:
 //-Información del servidor
 //-Roles definidos en el sistema
@@ -16,7 +19,7 @@ function __autoload($resource) {
 }
 
 try {
-    
+
     $r = new Request();
     
     
@@ -25,7 +28,9 @@ try {
     $singleton = Singleton::getInstance();
     $singleton->db = $db;
     $singleton->r = $r;
+	
     new Boot($singleton->r);
+	
 } catch (Exception $e) {
 //    var_dump($e);
     echo "Error 404";
