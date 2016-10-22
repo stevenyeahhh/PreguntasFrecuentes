@@ -1,12 +1,12 @@
 <?php
-
+ 
 class Request {
 
     private $controller;
     private $method;
     private $arguments;
 
-    public function __construct() {
+    public function __construct() { 
 //        die("hola");
         if (isset($_GET['url'])) {
             $url = filter_input(INPUT_GET, 'url', FILTER_SANITIZE_URL);

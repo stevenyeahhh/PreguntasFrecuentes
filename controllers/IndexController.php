@@ -25,7 +25,7 @@ class IndexController extends Controller {
 
     public function index() {
         $title = "Bienvenido a " . APP_NAME;
-        $renderize = "index";
+        $renderize = "index";   
         $this->view->setTitle($title);
         $this->view->renderize($renderize);
     }

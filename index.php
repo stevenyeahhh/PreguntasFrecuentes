@@ -12,18 +12,14 @@ echo "Hola";
 include 'config/config.php';
 
 function __autoload($resource) {
-//        echo ROOT . 'config' . DS . $resource . '.php';
+        echo ROOT . 'config' . DS . $resource . '.php';
     if (is_readable(ROOT . 'config' . DS . $resource . '.php')) {
         include ROOT . 'config' . DS . $resource . '.php';
-    }
+    } 
 }
 
 try {
-
-    $r = new Request();
-    
-    
-//    die("hola");
+    $r = new Request();//    die("hola");
     $db = new Database();
     $singleton = Singleton::getInstance();
     $singleton->db = $db;
@@ -38,4 +34,4 @@ try {
 
 //La forma en que se ejecuta un controlador es por url, el orden es [host]/[controlador]/[función del controlador][/ parómeotros]
 //Para ver ejemplo de funcionamiento y funcionalidades bósicas del framework, ir a controllers/indexController
-?>
+?>  
